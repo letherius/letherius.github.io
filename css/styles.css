@@ -43,3 +43,58 @@ margin-right: 10px;
 img.dibley {
     max-width: 100%
 }
+
+/* CSS GRID PAGE */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.wrapper div {
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.box1 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    background-color: #d9534f;
+}
+
+.box2 {
+    grid-column: 1 / 6;
+    grid-row: 2;
+    background-color: #5cb85c;
+}
+
+.box3 {
+    grid-column: 6 / -1;
+    grid-row: 2;
+    background-color: #f0ad4e;
+}
+
+.box4 {
+    grid-column: 1 / 7;
+    grid-row: 3;
+    background-color: #5bc0de;
+}
+
+.box5 {
+    grid-column: 7 / -1;
+    grid-row: 3;
+    background-color: #9370db;
+}
+
+.box6 {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    background-color: #f5a9c6;
+}
