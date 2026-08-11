@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display&display=swap');
 
 /* GLOBAL STYLES */
+html,
+body {
+  min-height: 100%;
+}
+
 body {
   padding-top: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -16,6 +24,7 @@ h6 {
 
 main {
   padding: 20px;
+  flex: 1;
 }
 
 /* Keeps page content readable without making it too narrow */
@@ -118,11 +127,12 @@ img.dibley {
 
 /* FOOTER */
 .site-footer {
-  margin-top: 50px;
+  margin-top: auto;
   padding: 20px;
   text-align: center;
   background-color: #212529;
   color: white;
+  width: 100%;
 }
 
 .site-footer p {
