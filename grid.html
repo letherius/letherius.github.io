@@ -2,15 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>CSS Grid: Letherius Miller</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <meta
+    name="description"
+    content="A CSS Grid example created by Letherius Miller for WEBD 225 showing responsive rows, columns, and layout changes."
+  >
+
+  <meta name="author" content="Letherius Miller">
+
+  <title>Grid: Letherius Miller</title>
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="images/favicon.svg"
+  >
 
   <!-- Bootstrap CSS -->
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
 
@@ -20,6 +35,7 @@
 
 <body>
 
+  <!-- Main navigation -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
 
@@ -76,25 +92,54 @@
     </div>
   </nav>
 
+  <!-- Main page content -->
   <main class="container-fluid">
 
-    <h2>Practicing with CSS Grid</h2>
+    <header>
+      <h1>Practicing With CSS Grid</h1>
 
-    <div class="wrapper">
-      <div class="box1">One</div>
-      <div class="box2">Two</div>
-      <div class="box3">Three</div>
-      <div class="box4">Four</div>
-      <div class="box5">Five</div>
-      <div class="box6">Six</div>
-    </div>
+      <p>
+        This page was one of my exercises for learning how CSS Grid can be
+        used to organize content into rows and columns. The different boxes
+        helped me see how grid columns, rows, and spacing work together.
+      </p>
+
+      <p>
+        I also added responsive changes so the layout doesn't stay locked
+        into three columns on smaller screens. On phones and tablets, the
+        boxes can stack into one column and become easier to read.
+      </p>
+    </header>
+
+    <section aria-labelledby="grid-example-heading">
+
+      <h2 id="grid-example-heading">Responsive Grid Example</h2>
+
+      <!-- CSS Grid layout used for the original course exercise -->
+      <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">Three</div>
+        <div class="box4">Four</div>
+        <div class="box5">Five</div>
+        <div class="box6">Six</div>
+      </div>
+
+    </section>
 
   </main>
 
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Letherius Miller | WEBD 225</p>
+    </div>
+  </footer>
+
   <!-- Bootstrap JavaScript -->
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
-  </script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
 
 </body>
 </html>
