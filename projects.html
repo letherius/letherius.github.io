@@ -1,175 +1,210 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+<head>
+  <meta charset="utf-8">
 
-    <meta
-      name="description"
-      content="Projects completed by Letherius Miller while learning HTML, CSS, Bootstrap, responsive design, and GitHub in WEBD 225."
-    />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
-    <meta name="author" content="Letherius Miller" />
+  <meta
+    name="description"
+    content="Web development projects completed by Letherius Miller in WEBD 225, including CSS Grid, Bootstrap, responsive design, and GitHub Pages."
+  >
 
-    <title>Projects: Letherius Miller</title>
+  <meta name="author" content="Letherius Miller">
 
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <title>Projects: Letherius Miller</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="images/favicon.svg"
+  >
 
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
 
-  <body>
-    <!-- Main navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Letherius Miller</a>
+  <!-- Custom CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavigation"
-          aria-controls="mainNavigation"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
 
-        <div class="collapse navbar-collapse" id="mainNavigation">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
+  <!-- Main navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
 
-            <li class="nav-item">
-              <a class="nav-link" href="grid.html">Grid</a>
-            </li>
+      <a class="navbar-brand" href="index.html">Letherius Miller</a>
 
-            <li class="nav-item">
-              <a class="nav-link" href="carousel.html">Carousel</a>
-            </li>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavigation"
+        aria-controls="mainNavigation"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <ul class="navbar-nav me-auto">
 
-            <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="grid.html">Grid</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="carousel.html">Carousel</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="projects.html"
+            >
+              Projects
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">Skills</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Main page content -->
+  <main class="container-fluid">
+
+    <header>
+      <h1>My Web Development Projects</h1>
+
+      <p>
+        Throughout WEBD 225, I've worked with several different parts of
+        front-end web development. Some assignments focused on page layout,
+        while others gave me more practice using Bootstrap, responsive design,
+        and GitHub.
+      </p>
+
+      <p>
+        These projects helped me get more comfortable making changes to a
+        website and seeing how those changes affect the final page. They also
+        gave me more practice using branches and keeping my work organized.
+      </p>
+    </header>
+
+    <section aria-labelledby="projects-heading">
+
+      <h2 id="projects-heading">Course Projects</h2>
+
+      <!-- Bootstrap cards organize examples of work from the course -->
+      <div class="row g-4 mt-1">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100">
+            <div class="card-body d-flex flex-column">
+
+              <h3 class="card-title h5">CSS Grid</h3>
+
+              <p class="card-text">
+                I used CSS Grid to practice creating page layouts with rows,
+                columns, spacing, and sections that use different amounts of
+                space.
+              </p>
+
               <a
-                class="nav-link active"
-                aria-current="page"
-                href="projects.html"
+                href="grid.html"
+                class="btn btn-primary mt-auto"
               >
-                Projects
+                View Grid Page
               </a>
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">Skills</a>
-            </li>
-          </ul>
+            </div>
+          </article>
         </div>
-      </div>
-    </nav>
 
-    <!-- Main page content -->
-    <main class="container">
-      <header class="mb-4">
-        <h1>My Web Development Projects</h1>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100">
+            <div class="card-body d-flex flex-column">
 
-        <p>
-          Throughout WEBD 225, I've worked with several different parts of
-          front-end web development. Some assignments focused on page layout,
-          while others gave me more practice using Bootstrap and GitHub.
-        </p>
+              <h3 class="card-title h5">Bootstrap Carousel</h3>
 
-        <p>
-          These projects helped me get more comfortable making changes to a
-          website and seeing how those changes affect the final page. They also
-          gave me more practice working with branches and keeping my code
-          organized.
-        </p>
-      </header>
+              <p class="card-text">
+                I created a working image carousel using Bootstrap and added
+                indicators and controls so visitors can move between the
+                different photos.
+              </p>
 
-      <section aria-labelledby="project-heading">
-        <h2 id="project-heading">Course Projects</h2>
+              <a
+                href="carousel.html"
+                class="btn btn-primary mt-auto"
+              >
+                View Carousel
+              </a>
 
-        <!-- Bootstrap cards are used to organize the project information -->
-        <div class="row g-4 mt-1">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title h5">CSS Grid</h3>
-
-                <p class="card-text">
-                  I used CSS Grid to practice creating page layouts with rows,
-                  columns, spacing, and different sized sections.
-                </p>
-
-                <a href="grid.html" class="btn btn-primary">
-                  View Grid Page
-                </a>
-              </div>
             </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title h5">Bootstrap Carousel</h3>
-
-                <p class="card-text">
-                  I created a working image carousel using Bootstrap and added
-                  navigation controls so visitors can move between images.
-                </p>
-
-                <a href="carousel.html" class="btn btn-primary">
-                  View Carousel
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title h5">GitHub Pages</h3>
-
-                <p class="card-text">
-                  I've used GitHub branches, commits, pull requests, and GitHub
-                  Pages to manage my site and publish changes during the course.
-                </p>
-
-                <a href="index.html" class="btn btn-primary">
-                  View Home Page
-                </a>
-              </div>
-            </div>
-          </div>
+          </article>
         </div>
-      </section>
-    </main>
 
-    <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Letherius Miller | WEBD 225</p>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100">
+            <div class="card-body d-flex flex-column">
+
+              <h3 class="card-title h5">GitHub Pages</h3>
+
+              <p class="card-text">
+                I've used GitHub branches, commits, pull requests, and GitHub
+                Pages to manage my site and publish changes throughout the
+                course.
+              </p>
+
+              <a
+                href="index.html"
+                class="btn btn-primary mt-auto"
+              >
+                View Home Page
+              </a>
+
+            </div>
+          </article>
+        </div>
+
       </div>
-    </footer>
 
-    <!-- Bootstrap JavaScript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    ></script>
-  </body>
+    </section>
+
+  </main>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Letherius Miller | WEBD 225</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+</body>
 </html>
