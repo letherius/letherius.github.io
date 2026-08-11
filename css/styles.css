@@ -18,7 +18,7 @@ main {
   padding: 20px;
 }
 
-/* Improved content width so pages are readable without being too narrow */
+/* Keeps page content readable without making it too narrow */
 main.container-fluid {
   width: 90%;
   max-width: 1100px;
@@ -51,6 +51,15 @@ img {
 
 img.dibley {
   width: 100%;
+}
+
+/* ABOUT PAGE */
+.about-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 15px 0 20px;
 }
 
 /* CSS GRID PAGE */
@@ -140,7 +149,7 @@ button:focus {
     font-size: 1.1rem;
   }
 
-  /* Stack the Home page columns instead of squeezing them together */
+  /* Stack Home page columns on smaller screens */
   .home_2col .row {
     display: block;
   }
@@ -150,7 +159,7 @@ button:focus {
     margin-bottom: 20px;
   }
 
-  /* Make the Grid easier to read on smaller screens */
+  /* Stack Grid boxes on smaller screens */
   .wrapper {
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(90px, auto);
@@ -169,6 +178,11 @@ button:focus {
   /* Reduce carousel height on smaller screens */
   .carousel-item img {
     height: 325px;
+  }
+
+  .about-image {
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -193,5 +207,10 @@ button:focus {
 
   .carousel-item img {
     height: 250px;
+  }
+
+  .about-image {
+    width: 150px;
+    height: 150px;
   }
 }
