@@ -5,33 +5,32 @@
 
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    content="width=device-width, initial-scale=1"
   >
 
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta
+    name="description"
+    content="About Letherius Miller, an IT support professional and software development student completing coursework in WEBD 225."
+  >
 
-  <title>Letherius Miller: About</title>
+  <meta name="author" content="Letherius Miller">
 
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <title>About: Letherius Miller</title>
 
   <link
-    rel="canonical"
-    href="https://getbootstrap.com/docs/4.0/examples/starter-template/"
+    rel="icon"
+    type="image/svg+xml"
+    href="images/favicon.svg"
   >
 
   <!-- Bootstrap CSS -->
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
 
   <!-- Custom CSS -->
   <link href="css/styles.css" rel="stylesheet">
-
-  <!-- React -->
-  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 </head>
 
 <body>
@@ -93,57 +92,44 @@
     </div>
   </nav>
 
-  <main role="main" class="container-fluid">
+  <!-- Main page content -->
+  <main class="container-fluid">
 
-    <div id="h1"></div>
-    <div id="img"></div>
-    <div id="content"></div>
+    <!-- Content below is created by the external React script -->
+    <header>
+      <div id="h1"></div>
+      <div id="img"></div>
+      <div id="content"></div>
+    </header>
 
-    <script>
-      const user = {
-        name: 'Letherius Miller',
-        imageUrl: 'images/about.jpg',
-        bio: 'My name is Letherius Miller. I work in IT support and I am currently earning my bachelor’s degree in software development. I enjoy learning more about web development, building practical projects, and spending time with my family.'
-      };
+    <section aria-labelledby="background-heading">
 
-      // Step one - Create React elements
-      const heading = React.createElement(
-        'h1',
-        null,
-        'About ' + user.name
-      );
+      <h2 id="background-heading">My Background</h2>
 
-      const image = React.createElement('img', {
-        src: user.imageUrl,
-        alt: 'Photo of ' + user.name,
-        width: 200,
-        height: 200
-      });
+      <p>
+        Working in IT has given me experience solving technical problems,
+        helping users, and learning new systems when something changes. My
+        software development courses have helped me build on that experience
+        by giving me more practice with programming and web development.
+      </p>
 
-      const paragraph = React.createElement(
-        'p',
-        null,
-        user.bio
-      );
-
-      // Step two - Render the React elements
-      ReactDOM.render(
-        heading,
-        document.getElementById('h1')
-      );
-
-      ReactDOM.render(
-        image,
-        document.getElementById('img')
-      );
-
-      ReactDOM.render(
-        paragraph,
-        document.getElementById('content')
-      );
-    </script>
+    </section>
 
   </main>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Letherius Miller | WEBD 225</p>
+    </div>
+  </footer>
+
+  <!-- React libraries -->
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- External About page JavaScript -->
+  <script src="js/script.js"></script>
 
   <!-- Bootstrap JavaScript -->
   <script
