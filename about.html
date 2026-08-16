@@ -1,84 +1,140 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Letherius Miller: About</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
-    <!-- Bootstrap core CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+  <meta charset="utf-8">
 
-    <!-- Custom styles for this template -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="About Letherius Miller, an IT support professional and software development student completing coursework in WEBD 225."
+  >
+
+  <meta name="author" content="Letherius Miller">
+
+  <title>About: Letherius Miller</title>
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="images/favicon.svg"
+  >
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Custom CSS -->
+  <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="index.html">Letherius Miller</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+
+  <!-- Main navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html">Letherius Miller</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavigation"
+        aria-controls="mainNavigation"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-    <a class="nav-link" href="index.html">Home</a>
-</li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="grid.html">Grid</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="carousel.html">Carousel</a>
-            </li>
-            <li class="nav-item active">
-    <a class="nav-link" href="about.html">About</a>
-</li>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <ul class="navbar-nav me-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="grid.html">Grid</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="carousel.html">Carousel</a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="about.html"
+            >
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">Skills</a>
+          </li>
+
         </ul>
+      </div>
+
     </div>
-</nav>
+  </nav>
 
-<main role="main" class="container-fluid">
-    <div id="h1"></div>
-    <div id="img"></div>
-    <div id="content"></div>
+  <!-- Main page content -->
+  <main class="container-fluid">
 
-    <script>
-        const user = {
-    name: 'Letherius Miller',
-    imageUrl: 'images/about.jpg',
-    bio: 'My name is Letherius Miller. I work in IT support and I am currently earning my bachelor’s degree in software development. I enjoy learning more about web development, building practical projects, and spending time with my family.'
-};
+    <!-- Content below is created by the external React script -->
+    <header>
+      <div id="h1"></div>
+      <div id="img"></div>
+      <div id="content"></div>
+    </header>
 
-        // Step one - Create a React element
-const heading = React.createElement('h1', null, 'About ' + user.name);
+    <section aria-labelledby="background-heading">
 
-const image = React.createElement('img', {
-    src: user.imageUrl,
-    alt: 'Photo of ' + user.name,
-    width: 200,
-    height: 200
-});
+      <h2 id="background-heading">My Background</h2>
 
-const paragraph = React.createElement('p', null, user.bio);
-        
-        // Step 2: Render the React element
-ReactDOM.render(heading, document.getElementById('h1'));
-ReactDOM.render(image, document.getElementById('img'));
-ReactDOM.render(paragraph, document.getElementById('content'));
-    </script>
+      <p>
+        Working in IT has given me experience solving technical problems,
+        helping users, and learning new systems when something changes. My
+        software development courses have helped me build on that experience
+        by giving me more practice with programming and web development.
+      </p>
 
-</main><!-- /.container -->
+    </section>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+  </main>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Letherius Miller | WEBD 225</p>
+    </div>
+  </footer>
+
+  <!-- React libraries -->
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- External About page JavaScript -->
+  <script src="js/script.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
 
 </body>
 </html>

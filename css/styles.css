@@ -1,51 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
-
-
-/*GLOBAL*/
+/* GLOBAL STYLES */
+html,
 body {
-    padding-top: 5rem;
-
+  min-height: 100%;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Playfair Display', serif;
+body {
+  padding-top: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, 'Times New Roman', serif;
+}
 
 main {
-    padding: 20px;
+  padding: 20px;
+  flex: 1;
 }
+
+/* Keeps page content readable without making it too narrow */
 main.container-fluid {
-    width: 50%;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-}
-
-nav {
-    margin-bottom: 120px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 
 .navbar-brand {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-button.navbar-toggler{
-margin-right: 10px;
+button.navbar-toggler {
+  margin-right: 10px;
 }
 
 .home_2col {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* Keep images inside their containers */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 img.dibley {
-    max-width: 100%
+  width: 100%;
+}
+
+/* ABOUT PAGE */
+.about-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 15px 0 20px;
 }
 
 /* CSS GRID PAGE */
-
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -58,7 +83,7 @@ img.dibley {
   display: grid;
   place-items: center;
   border: 1px solid black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -92,8 +117,109 @@ img.dibley {
   background-color: #f5a9c6;
 }
 
+/* CAROUSEL */
 .carousel-item img {
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+
+/* FOOTER */
+.site-footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #212529;
+  color: white;
+  width: 100%;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Improve keyboard accessibility */
+a:focus,
+button:focus {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* TABLET AND SMALLER SCREENS */
+@media (max-width: 768px) {
+
+  main.container-fluid {
+    width: 100%;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  /* Stack Home page columns on smaller screens */
+  .home_2col .row {
+    display: block;
+  }
+
+  .home_2col .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Stack Grid boxes on smaller screens */
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(90px, auto);
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  /* Reduce carousel height on smaller screens */
+  .carousel-item img {
+    height: 325px;
+  }
+
+  .about-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* PHONE SCREENS */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .navbar-brand {
+    margin-left: 5px;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+
+  .about-image {
+    width: 150px;
+    height: 150px;
+  }
 }
